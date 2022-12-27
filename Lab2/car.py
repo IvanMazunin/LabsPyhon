@@ -1,5 +1,5 @@
 class Car:
-    def __init__(self, brand, model, price):
+    def __init__(self, brand : str = "NOVALUE", model : str = "NOVALUE", price : int = 0):
         self.brand = brand
         self.model = model
         self.price = price

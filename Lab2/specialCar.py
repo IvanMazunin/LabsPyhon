@@ -1,7 +1,7 @@
 import car
 class SpecialCar(car.Car):
-    def __init__(self, brand, model, price, speciality):
-        super().__init__(self, brand, model, price)
+    def __init__(self, brand : str = "NOVALUE", model : str = "NOVALUE", price : int = 0, speciality : str = "NOVALUE"):
+        super().__init__(brand, model, price)
         self.speciality = speciality
 
     def  __str__(self) -> str:

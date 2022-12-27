@@ -1,0 +1,37 @@
+{
+    "name": "Автопарк №1",
+    "trucks": [
+        {
+            "brand": "Volvo",
+            "model": "Самосвал",
+            "price": 8000000,
+            "capacity": 12
+        },
+        {
+            "brand": "ГАЗ",
+            "model": "Седельный тягач",
+            "price": 7500000,
+            "capacity": 10
+        },
+        {
+            "brand": "Man",
+            "model": "Бортовой автомобиль",
+            "price": 12000000,
+            "capacity": 15
+        }
+    ],
+    "specialCars": [
+        {
+            "brand": "ГАЗ",
+            "model": "Газель",
+            "price": 5500000,
+            "speciality": "Скорая помощь"
+        },
+        {
+            "brand": "Man",
+            "model": "Седан",
+            "price": 1500000,
+            "speciality": "Полицейский транспорт"
+        }
+    ]
+}

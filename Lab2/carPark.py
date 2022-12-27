@@ -4,7 +4,7 @@ import truck
 import json
 import copy
 class CarPark:
-    def __init__(self, name, trucks : list = [], specialCars : list = []):
+    def __init__(self, name : str = "NOVALUE", trucks : list = [], specialCars : list = []):
         self.name = name
         self.trucks = trucks
         self.specialCars = specialCars
@@ -39,12 +39,12 @@ def DeserializeCarPark(path : str) -> CarPark:
             if not i in dict:
                 break
         else:
-            return truck.Truck(dict["mark"], dict["model"], dict["price"], dict["capacity"])
+            return truck.Truck(dict["brand"], dict["model"], dict["price"], dict["capacity"])
         for i in specialCar.SpecialCar().__dict__.keys():
             if not i in dict:
                 break
         else:
-            return specialCar.SpecialCar(dict["mark"], dict["model"], dict["price"], dict["speciality"])
+            return specialCar.SpecialCar(dict["brand"], dict["model"], dict["price"], dict["speciality"])
     with open(path, 'r') as infile:
         data = json.load(infile)
         return Deserialize(data)
